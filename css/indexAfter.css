@@ -1,0 +1,645 @@
+body{
+	background: #E9E9E9;
+}
+
+ul li{
+	height: 5.1rem;
+	width: 100%;
+	margin-bottom: 0.25rem;
+	background: #fff;
+}
+.errorsTip{
+	text-align: center;
+	font-size:0.36rem;
+	line-height: 5rem;
+	color: #9d9c9c;
+}
+ul li>div{
+	height: 5.1rem;
+	width: 100%;
+	position: relative;
+}
+ul li:last-child{
+	margin-bottom:0;
+} 
+li .tittle{
+	position:relative;
+	height: 0.6rem;
+	line-height: 0.6rem;
+	width: 100%;
+	border-bottom: 1px solid #E9E9E9;
+	box-sizing: border-box;
+	
+}
+.tittle>.mark{
+	position:absolute;
+	left:2%;top:0.09rem;
+	line-height: 0.42rem;
+	border-left: 4px solid #222222;
+	color: #222222;
+	font-size: 0.28rem;
+	font-weight: bold;
+	padding-left: 2.5%;
+}
+.content{
+	position: relative;
+	box-sizing: border-box;
+	color: #999999;
+	height: 4.5rem;
+	overflow: hidden;
+	width: 100%;
+}
+.mybtn{
+	float: right;
+	text-align: center;
+	line-height: 0.44rem;
+	width: 1.52rem;
+	height: 0.44rem;
+	color: #fff;
+	margin-top: 0.08rem;
+	margin-right: 4%;
+	font-size: 0.26rem;
+	border-radius: 0.22rem;
+}
+
+
+   /*包裹开始*/     
+.tittle>.new{
+	float: right;
+	font-size: 0.3rem;
+	color: #CC0000;
+	position:absolute;
+	right:3%;top:0.1rem;
+	line-height: 0.4rem;
+	
+}
+.logo{
+	border: 1px solid #ccc;
+	border-radius: 50%;
+	height: 0.5rem;
+	width: 0.5rem;
+	position:absolute;
+	left:20%;top:0.03rem;
+	box-sizing: border-box;
+}
+
+.number,.time{
+	float: left;
+	width: 50%;
+	padding-left: 12%;
+	box-sizing: border-box;
+	color: #999999;
+	height: 0.38rem;
+	line-height: 0.38rem;
+	font-size: 0.22rem;
+}
+.baogo_content{
+	padding: 0.3rem 0 0.26rem;
+	box-sizing: border-box;
+	width: 100%;
+}
+.time{
+	padding-left: 8%;
+}
+.qujian{
+	border:1px solid #0066cc ;
+	width: 2.4rem;
+	height: 2.4rem;
+	border-radius: 50%;
+	margin: 0.76rem auto 0.05rem;
+	box-sizing: border-box;
+}
+.qujian>div{
+	background:#0066cc ;
+	width: 2rem;
+	height: 2rem;
+	border-radius: 50%;
+	margin: 0.18rem;
+	padding: 0.5rem;
+	box-sizing: border-box;
+}
+.qujian>div>p{
+	height: 1rem;
+	width: 1rem;
+	line-height: 0.5rem;
+	font-size: 0.4rem;
+	text-align: center;
+	color: #fff;
+}
+
+.baogo_content>p{
+	height: 0.38rem;
+	line-height: 0.38rem;
+	font-size: 0.26rem;
+	text-align: center;
+	
+}
+.tiqunub{
+	position: absolute;
+	bottom:32% ;
+	left: 68%;
+	height: 0.3rem;
+	line-height: 0.3rem;
+	font-size: 0.26rem;
+}
+.tiqunub>p{
+	color: #CC0000;
+	display:inline-block;
+}
+
+#swiper-container {
+    width: 100%;
+    
+}  
+.swiper-btn-prev{
+	border-top:3px solid #ccc;border-left:3px solid #ccc;
+	transform:rotate(-45deg);
+	-moz-transform:rotate(-45deg);
+	-webkit-transform:rotate(-45deg);
+	background-position: center center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    height: 0.5rem;
+    width: 0.5rem;
+    position: absolute;
+    top: 51%;
+    left: 10px;
+    z-index: 10;
+}
+.swiper-btn-next{
+	border-bottom:3px solid #ccc;border-right:3px solid #ccc;
+    right: 10px;
+    transform:rotate(-45deg);
+	-moz-transform:rotate(-45deg);
+	-webkit-transform:rotate(-45deg);
+	background-position: center center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    height: 0.5rem;
+    width: 0.5rem;
+    position: absolute;
+    top: 51%;
+    z-index: 10;
+}
+/*包裹结束*/ 
+
+
+/*添加模块开始*/
+.after_add{
+	height: 1.49rem;
+	width: 100%;
+	background: #F5F5F5;
+	padding-top:0.95rem ;
+}
+.after_add>.addbtn{
+	height: 0.62rem;
+	width: 62%;
+	line-height: 0.62rem;
+	font-size: 0.3rem;
+	color: #fff;
+	text-align: center;
+	margin:0 auto;
+	background: #2671C3;
+	border-radius:0.3rem;
+	
+}
+/*添加模块结束*/
+
+/*添加定制之前*/
+.indexbefor{
+	background: url(../img/indexbackg.png) no-repeat;
+	width: 100%;
+	height: 5.5rem;
+	background-size:100% 5.5rem;
+}
+.indexbefor>img{
+	width: 68.6%;
+	margin: 0.75rem 15.7% 0.55rem;
+}
+.addbtn_befor{
+	width: 62%;
+	height: 0.62rem;
+	line-height: 0.62rem;
+	background: #2671C3;
+	color: #FFFFFF;
+	font-size: 0.28rem;
+	text-align: center;
+	margin: 0 auto;
+	border-radius: 7%/50%;
+}
+
+
+
+/*小宝特卖*/
+.shopcar,.notpay{
+	float: right;
+	padding-left: 9%;
+	width: 15%;
+	line-height: 0.45rem;
+	height: 0.45rem;
+	margin-top: 0.07rem;
+	background: url(../img/btn05.png) left no-repeat ;
+	background-size:contain;
+	font-size: 0.26rem;
+	text-align: left;
+	color: #666666;
+}
+
+.notpay{
+	padding-left: 8.5%;
+	width: 14%;
+	background: url(../img/btn06.png) left no-repeat ;
+	background-size:contain;
+}
+.shopcar>span{
+	/*display: inline-block;*/
+	height: 0.3rem;
+	width: 0.3rem;
+	border-radius:50% ;
+	background: #FF0000;
+	color: #fff;
+	font-size: 0.2rem;
+	text-align: center;
+	position: absolute;
+	top: 0.03rem;
+	right: 16%;
+}
+.toppic{
+	width: 100%;
+	height: 37%;
+	display: block;
+}
+.pic01{
+	width: 50%;
+	float: left;
+	height: 1.35rem;
+	border: 1px solid #E9E9E9;
+	box-sizing: border-box;
+	z-index: 10;
+}
+.container_pic{
+	height: 63%;
+	padding:0 0.14rem;
+	box-sizing: border-box;
+	
+}
+/*小宝特卖*/
+
+
+
+/*积分夺宝开始*/
+.leftpic{
+	height: 100%;
+	width: 40%;
+	border-right: 1px solid #E9E9E9;
+	box-sizing: border-box;
+}
+.onebuy_pic{
+	float: right;
+	height: 100%;
+	width: 60%;
+}
+.pic02{
+	height: 50%;
+	width: 50%;
+	float: left;
+	box-sizing: border-box;
+	border: 1px solid #E9E9E9;
+}
+
+.myCourt{
+	position: absolute;
+	left:72%;top:0.1rem;
+	line-height: 0.4rem;
+	height: 0.4rem;
+	background: url(../img/btn04.png) left no-repeat ;
+	background-size:contain;
+	font-size: 0.26rem;
+	text-align: left;
+	color: #666666;
+	padding-left: 7%;
+}
+.pay{
+	background: #0066cc;	
+}
+/*积分夺宝结束*/
+
+
+/*小宝理财开始*/
+.licai_new{
+	float: right;
+	margin: 0.1rem 0.26rem;
+	color: #666666;
+	border:1px solid #666666 ;
+	height: 0.4rem;
+	line-height:0.4rem; 
+	padding: 0 0.2rem;
+	font-size: 0.26rem;
+	border-radius: 0.2rem;
+	box-sizing: border-box;
+}
+
+.left_icon{
+	position: absolute;
+	height: 0.4rem;
+	line-height:0.4rem; 
+	width: 1.5rem;
+	padding-left: 0.1rem;
+	color: #fff;
+	font-size: 0.26rem;
+	text-align: left;
+	top:0.2rem;
+	left: 0;
+	background: #F23E3F;
+	border-radius:0 0.2rem 0.2rem 0;
+}
+.left_icon02{
+	position: absolute;
+	height: 0.4rem;
+	line-height:0.4rem; 
+	padding-left: 0.2rem;
+	color: #0066CC;
+	font-size: 0.26rem;
+	text-align: left;
+	top:0.2rem;
+	left: 0;
+}
+.financing .profit{
+	height: 0.68rem;
+	line-height:0.68rem; 
+	font-size: 0.6rem;
+	text-align: center;
+	color:#a50021;
+	padding-top: 1.5rem;
+	/*font-weight: bold;*/
+}
+.financing .oldprofit{
+    height: 0.68rem;
+    line-height: 0.68rem;
+    font-size: 0.5rem;
+    text-align: center;
+    color: #0066CC;
+    padding-top: 1.5rem;
+    font-weight: bold;
+}
+.financing .profitimg{
+	display: block;
+	height: 0.6rem;
+	width: 2.5rem;
+	margin: 1rem auto 0.2rem;
+}
+.financing .profit_name,.financing .profit_new{
+	height: 0.56rem;
+	line-height:0.5rem; 
+	font-size: 0.26rem;
+	text-align: center;
+	color: #9D9C9C;
+}
+.financing .profit_new{
+	margin: 0.25rem auto 0;
+}
+.top_content{
+	/*position: relative;
+	top: 0.6rem;*/
+}
+.onebuy_btn{
+	height: 0.62rem;
+	line-height:0.62rem; 
+	font-size: 0.28rem;
+	text-align: center;
+	background: #ff6c44;
+	width: 4.65rem;
+	margin:0 auto;
+	color: #fff;
+	border-radius: 0.2rem;
+}
+.onebuy_btns{
+	height: 0.62rem;
+	line-height:0.62rem; 
+	font-size: 0.28rem;
+	text-align: center;
+	background: #cf042d;
+	width: 4.65rem;
+	margin:0.7rem auto 0;
+	color: #fff;
+	border-radius: 0.2rem;
+}
+.onebuy_btn>img{
+	height: 0.34rem;
+	width: 0.34rem;
+	margin: -0.06rem 0.05rem 0;
+}
+.right_icon{
+	position: absolute;
+	right: 0.3rem;
+	top: 0.25rem;
+	height: 0.28rem;
+	line-height:0.28rem; 
+	font-size: 0.26rem;
+	text-align: left;
+	/*padding-left: 0.48rem;
+	background: url(../img/btn07.png) left no-repeat;
+	background-size:contain;*/
+	color: #ff6c44;
+}
+.right_icon_old{
+	position: absolute;
+	right: 0.3rem;
+	top: 0.25rem;
+	height: 0.28rem;
+	line-height:0.28rem; 
+	font-size: 0.26rem;
+	text-align: left;
+	color: #2671C3;
+}
+.right_icon>img{
+	width: 0.36rem;
+	height:0.28rem;
+	margin-right: 0.1rem;
+}
+.footerBtn{
+	position: absolute;
+	top: 3.13rem;
+	width: 100%;
+	height: 1.14rem;
+	padding: 0 0.3rem;
+}
+.footerBtn>div{
+	float: left;
+	width: 22.66666%;
+	margin-right: 13.3333%;
+	
+}
+.footerBtn>.now_luky{
+	margin-right: 0;
+	padding-right:0;
+}
+
+.footerBtn p{
+	line-height: 0.52rem;
+	height: 0.52rem;
+	font-size: 0.24rem;
+	text-align: center;
+	color: #353333;
+}
+.now_luky>img,.now_time>img,.no_time>img{
+	display: block;
+	width: 0.62rem;
+	height: 0.62rem;
+	margin: 0 auto;
+}
+.no_time>img{
+	height: 0.52rem;
+	margin: 0.05rem auto;
+}
+.no_time span{
+	color: #FC8D4F;
+}
+.now_time span{
+	color: #FF4C4C;
+}
+.now_luky span{
+	color: #53A8FD;
+}
+.now_time>img{
+	width: 0.55rem;
+}
+.shadow{
+    background-color: rgba(0,0,0,0.8);
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: none;
+}
+
+.hide{
+	display: none;
+}
+/*小宝理财结束*/
+
+
+/*白拿开始*/
+
+.mybain{
+	background: #0067CB;
+}
+.alltpic{
+	width: 100%;
+}
+.bainaing_top>img{
+	height: 3.5rem;
+	width: 100%;
+}
+.baina_top{
+	width: 100%;
+	height: 3.5rem;
+	overflow: hidden;
+}
+.baina_top>img{
+	height: 3.5rem;
+	width:73.333%;
+	float: left;
+}
+.baina_time{
+	background: #E9E9E9;
+	float: left;
+	height: 3.5rem;
+	width: 26.6666%;
+}
+.bainaing_top>div{
+	width: 1.4rem;
+	height: 1.4rem;
+	background:#ed2a02;
+	-moz-opacity:0.85;  
+	opacity: 0.85;  
+	font-size: 0.28rem;
+	text-align: center;
+	line-height: 1.4rem;
+	color: #fff;
+	border-radius: 50%;
+	position: absolute;
+	top: 0.25rem;
+	right: 1.1rem;
+	transform: rotate(45deg);
+	-moz-transform:rotate(45deg); 	/* Firefox */
+	-webkit-transform:rotate(45deg);
+}
+.good_name{
+	padding: 0.15rem 0 0 0.45rem;
+	font-size: 13px;
+	text-align: left;
+	height: 0.3rem;
+	line-height: 0.3rem;
+	color: #222;
+}
+.coupon_name{
+	padding: 0.15rem 0 0 0.45rem;
+	font-size: 12px;
+	text-align: left;
+	height: 0.26rem;
+	line-height: 0.26rem;
+	color: #999999;
+}
+.footeright{
+	width: 2rem;
+	height: 0.62rem;
+	font-size: 0.28rem;
+	text-align: center;
+	line-height: 0.62rem;
+	background:#0067CB;
+	color: #fff;
+	border-radius: 0.3rem;
+	position: absolute;
+	bottom: 0.2rem;
+	right: 4%;
+}
+.baina_text01{
+	padding-top: 1rem;
+	height: 0.3rem;
+	font-size: 0.24rem;
+	text-align: center;
+	line-height: 0.3rem;
+	color: #222222;
+}
+.baina_text02{
+	height: 0.2rem;
+	font-size: 0.2rem;
+	text-align: center;
+	line-height: 0.2rem;
+	color: #666;
+}
+.countdown{
+	padding: 0.3rem 0.2rem;
+	height: 0.44rem;
+	width: 100%;
+	overflow: auto;
+}
+.countdown>span{
+	float: left;
+	width: 0.38rem;
+	height: 0.44rem;
+	font-size: 0.22rem;
+	text-align: center;
+	line-height: 0.44rem;
+	background:#f23e3f;
+	color: #fff;
+}
+.countdown>i{
+	float: left;
+	margin: 0.15rem 0.1rem;
+	width: 0.02rem;
+	height: 0.1rem;
+	border-bottom:2px solid #f23e3f ;
+	border-top:2px solid #f23e3f ;
+}
+
+/*白拿结束*/
+
+/*广告开始*/
+.advert,.tm{
+	height: 4.5rem;
+	overflow: hidden;
+	width: 100%;
+}

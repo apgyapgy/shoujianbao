@@ -1,0 +1,173 @@
+{
+    "images": [{
+        "imgUrl": "image/coupon/coupon_15004463379125709.png",
+        "imgDes": "",
+        "linkUrl": "www.baidu.com",
+        "name": "",
+        "id": "",
+        "refId": "",
+        "imgUrlMin": "image/coupon/coupon_15004463379125709_m.png"
+    },
+    {
+        "imgUrl": "image/coupon/coupon_15004463413132429.png",
+        "imgDes": "",
+        "linkUrl": "www.sina.com",
+        "name": "",
+        "id": "",
+        "refId": "",
+        "imgUrlMin": "image/coupon/coupon_15004463413132429_m.png"
+    }],
+    "types": [{
+        "tpId": "E69171557555702",
+        "images": {
+            "imgUrl": "image/template/ttemplate_14532556584110347.png",
+            "imgDes": "",
+            "linkUrl": "http://www.baidu.com",
+            "name": "",
+            "id": "",
+            "refId": "",
+            "imgUrlMin": "image/template/ttemplate_14532556584110347_m.png"
+        },
+        "tpColor": "#00c0ff",
+        "tpName": "蓝色",
+        "tpSubTitle": "",
+        "groupons": [
+        	{
+	            "gprice": "500",
+	            "images": [{
+	                "imgUrl": "image/coupon/coupon_15004471239079114.png",
+	                "imgDes": "",
+	                "linkUrl": "",
+	                "name": "",
+	                "id": "",
+	                "refId": "",
+	                "imgUrlMin": "image/coupon/coupon_15004471239079114_m.png"
+	            }],
+	            "outLinkUrl": "www.baidu.com",
+	            "sort": "1",
+	            "title": "测试01",
+	            "content": "",
+	            "oprice": "1000",
+	            "subTitle": "",
+	            "dueTm": {
+	                "date": 21,
+	                "hours": 14,
+	                "seconds": 0,
+	                "month": 6,
+	                "timezoneOffset": -480,
+	                "year": 117,
+	                "minutes": 2,
+	                "time": 1501030800000,
+	                "day": 5
+	            },
+	            "shopId": "O2SP20150528205350859kjy1dp312",
+	            "stock": 10,
+	            "allowBuyCnt": 1,
+	            "grouponId": "193719114615986"
+	        },
+	        {
+	            "gprice": "1000",
+	            "images": [{
+	                "imgUrl": "image/coupon/coupon_15004471668996102.png",
+	                "imgDes": "",
+	                "linkUrl": "",
+	                "name": "",
+	                "id": "",
+	                "refId": "",
+	                "imgUrlMin": "image/coupon/coupon_15004471668996102_m.png"
+	            }],
+	            "outLinkUrl": "www.sina.com",
+	            "sort": "2",
+	            "title": "测试002",
+	            "content": "",
+	            "oprice": "2000",
+	            "subTitle": "",
+	            "dueTm": {
+	                "date": 21,
+	                "hours": 14,
+	                "seconds": 0,
+	                "month": 6,
+	                "timezoneOffset": -480,
+	                "year": 117,
+	                "minutes": 22,
+	                "time": 1500949821000,
+	                "day": 5
+	            },
+	            "shopId": "O2SP20150528205350859kjy1dp312",
+	            "stock": 100,
+	            "allowBuyCnt": 1,
+	            "grouponId": "493619142406253"
+	        },
+	        {
+	            "gprice": "1000",
+	            "images": [{
+	                "imgUrl": "image/coupon/coupon_15004471668996102.png",
+	                "imgDes": "",
+	                "linkUrl": "",
+	                "name": "",
+	                "id": "",
+	                "refId": "",
+	                "imgUrlMin": "image/coupon/coupon_15004471668996102_m.png"
+	            }],
+	            "outLinkUrl": "www.sina.com",
+	            "sort": "2",
+	            "title": "短款纯白连衣裙，清纯与灵动感兼具体哦~",
+	            "content": "",
+	            "oprice": "2000",
+	            "subTitle": "",
+	            "dueTm": {
+	                "date": 21,
+	                "hours": 14,
+	                "seconds": 0,
+	                "month": 6,
+	                "timezoneOffset": -480,
+	                "year": 117,
+	                "minutes": 22,
+	                "time": 1501043421000,
+	                "day": 5
+	            },
+	            "shopId": "O2SP20150528205350859kjy1dp312",
+	            "stock": 1000,
+	            "allowBuyCnt": 1,
+	            "grouponId": "493619142406253"
+	        },
+	        {
+	            "gprice": "1000",
+	            "images": [{
+	                "imgUrl": "image/coupon/coupon_15004471668996102.png",
+	                "imgDes": "",
+	                "linkUrl": "",
+	                "name": "",
+	                "id": "",
+	                "refId": "",
+	                "imgUrlMin": "image/coupon/coupon_15004471668996102_m.png"
+	            }],
+	            "outLinkUrl": "www.sina.com",
+	            "sort": "2",
+	            "title": "短款纯白连衣裙，清纯与灵动感兼具体哦~",
+	            "content": "",
+	            "oprice": "2000",
+	            "subTitle": "",
+	            "dueTm": {
+	                "date": 21,
+	                "hours": 14,
+	                "seconds": 0,
+	                "month": 6,
+	                "timezoneOffset": -480,
+	                "year": 117,
+	                "minutes": 22,
+	                "time": 1500965084000,
+	                "day": 5
+	            },
+	            "shopId": "O2SP20150528205350859kjy1dp312",
+	            "stock": 15000,
+	            "allowBuyCnt": 1,
+	            "grouponId": "493619142406253"
+	        }
+	    ]
+    }],
+    "name": "淘宝红包活动",
+    "rspCd": "0000",
+    "rspDesc": "操作成功",
+    "subjectId": "C41069092952783"
+}
