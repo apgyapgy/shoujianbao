@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-type" content="text/html;charset=utf-8" >
+	    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0,user-scalable=no">
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	    <meta name="format-detection" content="telephone=no">
+	    <meta name="format-detection" content="email=no">
+		<title>我的应用管理</title>
+		<link rel="stylesheet" href="https://ufly.fuiou.com:9618/app/css/common.min.css" />
+		<link rel="stylesheet" href="https://ufly.fuiou.com:9618/app/css/personalTailor.css" />
+		<script src="https://ufly.fuiou.com:9618/app/js/jquery-1.8.2.min.js"></script>
+		<script src="https://ufly.fuiou.com:9618/app/js/LAB.min.js"></script>
+		<script src="https://ufly.fuiou.com:9618/app/js/spin.min.js"></script>
+		<script src="https://ufly.fuiou.com:9618/app/js/theme_ver.js"></script>
+		<script src="https://ufly.fuiou.com:9618/app/js/stat_o2o.js"></script>
+		<script src="https://ufly.fuiou.com:9618/app/js/fontSize.js"></script>
+		<style>
+			@media only screen and (max-width: 320px) {
+				.tittle>.btn1{
+				float: right;
+				width: 23%;}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="allcontents">
+		<header>
+			<div id="returnBtn">
+				<div class="back" ></div>
+					<h1>我的应用管理</h1>
+				</div>
+		</header>	
+		<ul>
+			<!--<li data-section="1">
+				<div class="tittle">
+					<div class="mark">包裹</div>
+					<div class="btn2 up">位置上移</div>
+					<div class="btn1 top">添加到首页</div>
+					
+				</div>
+				<div class="content">
+					<img src="img/abvert04.jpg" />
+				</div>	
+			</li>
+			<li data-section="2">
+				<div class="tittle">
+					<div class="mark">小宝理财</div>
+					<div class="btn2 up">位置上移</div>
+					<div class="btn1 top">添加到首页</div>
+				</div>
+				<div class="content">
+					<img src="img/abvert01.jpg" />
+				</div>	
+			</li>
+			<li data-section="3">
+				<div class="tittle">
+					<div class="mark">小宝特卖</div>
+					<div class="btn2 up">位置上移</div>
+					<div class="btn1 top">添加到首页</div>
+				</div>
+				<div class="content">
+					<img src="img/abvert02.jpg" />
+				</div>	
+			</li>
+			<li data-section="4">
+				<div class="tittle">
+					<div class="mark">白拿</div>
+					<div class="btn2 up">位置上移</div>
+					<div class="btn1 top">添加到首页</div>
+				</div>
+				<div class="content">
+					<img src="img/baina.jpg" />
+				</div>	
+			</li>
+			<li data-section="5">
+				<div class="tittle">
+					<div class="mark">积分多宝</div>
+					<div class="btn2 up">位置上移</div>
+					<div class="btn1 top">添加到首页</div>
+				</div>
+				<div class="content">
+					<img src="img/abvert03.jpg" />
+				</div>	
+			</li>
+			<li data-section="6">
+				<div class="tittle">
+					<div class="mark">包裹</div>
+					<div class="btn2 up">位置上移</div>
+					<div class="btn1 top">添加到首页</div>
+				</div>
+				<div class="content">
+					<img src="img/abvert04.jpg" />
+				</div>	
+			</li>-->
+		</ul>
+		<div id="loading"></div>
+		</div>
+	</body>
+	
+	<script type="text/javascript">
+            $(function(){
+            	var createLoadingTip = function(){
+					var opts = {
+						lines: 9, // 花瓣数目
+						length: 0,// 花瓣长度
+						width: 6,// 花瓣宽度
+						radius: 12, // 花瓣距中心半径
+						corners: 1,// 花瓣圆滑度 (0-1)
+						rotate: 0,// 花瓣旋转角度
+						direction: 1,// 花瓣旋转方向 1: 顺时针, -1: 逆时针
+						color: '#26bcf9',// 花瓣颜色
+						speed: 1,// 花瓣旋转速度
+						trail: 85,// 花瓣旋转时的拖影(百分比)
+						shadow: false,// 花瓣是否显示阴影
+						hwaccel: false,//spinner 是否启用硬件加速及高速旋转     
+						className: 'spinner', // spinner css 样式名称
+						zIndex: 999,// spinner的z轴 (默认是2000000000)
+						top: '50%',// spinner 相对父容器Top定位 单位 px
+						left: '50%'// spinner 相对父容器Left定位 单位 px
+					};
+					var spinner = new Spinner(opts);//实例化loading图案
+					var target = $("#loading").get(0);
+					spinner.spin(target);
+					return spinner;
+				}
+	        var spinner = createLoadingTip();
+	        var iOS = /(iPad|iPhone|iPod)/g.test(window.navigator.userAgent);
+	        var Android = /Android/i.test(window.navigator.userAgent);
+	        var _cordovaJs,_fuappJs='https://ufly.fuiou.com:9618/app/libs/fuapp.js';
+	        var serverIP_JS = "https://ufly.fuiou.com:9618/app/"; //服务端JS引入地址
+	       if (iOS) {
+	            _cordovaJs='https://ufly.fuiou.com:9618/app/libs/js/ios/cordova.js';
+	        }else if(Android){
+	            _cordovaJs='https://ufly.fuiou.com:9618/app/libs/js/android/cordova.js';
+	        }else{
+	            _fuappJs = "libs/fuapp.js";
+	            serverIP_JS = "";
+	        }
+	        
+//	        _fuappJs = "libs/fuapp.js";
+	        $LAB.script(_cordovaJs).wait()//文件是并行下载的，却能保证a.js能在b.js之前执行
+                .script(_fuappJs+"?v="+fuappJs_v)
+                .script(serverIP_JS+"js/uat-common_asy.js?v="+common_asy_v).wait(function() {
+            	 var userId,networkTp,Ptp,ticket,Ver,cityCd,communityCode,liHeight=5.35;
+                //上移
+                var $up = $(".up");
+                var $top = $(".top");
+                var a=1;
+                $(".allcontents").on("click", ".up", function(){ 
+                    var $div = $(this).parents("li"),length = $("li").length;
+                    var datasection = $div.attr("class").split(" ")[0];
+                    if ($div.index() != 0) {
+                    	a++;
+                    	$div.css('z-index',a);
+                        $div.animate({top:($div.index()-1)*liHeight+0.8+'rem'},200);
+                        $div.prev().animate({top:$div.index()*liHeight+0.8+'rem'},200);
+                        $div.prev().before($div);
+                        oprStat(userId,'appIndex','clk','up'+datasection);
+                    }
+                    for(var i=0;i<length;i++){
+            			var d=i;
+            			if($(".top").eq(d).text()=="解除应用"){
+            				$(".up").eq(d).show();
+            				$(".up").eq(0).hide();
+            			}
+	            	}
+                });
+                
+                
+                
+                //置顶
+                 $(".allcontents").on("click", ".top", function(){ 
+                    var $div = $(this).parents("li"),length = $("li").length;
+                    var datasection = $div.attr("class").split(" ")[0];
+                    if($(this).text()=="添加应用"){
+                    	a++;
+                        $("ul").prepend($div);
+                        $div.animate({top:'0.8rem'},500);
+                    	$(this).text("解除应用");
+                    	$div.css('z-index',a).addClass("ontop");
+                    	$("body").animate({scrollTop:0}, 500);
+                    	oprStat(userId,'appIndex','clk','top'+datasection);
+                    	
+                    }else{
+                    	a++;
+                        $("ul").append($div);
+                        $div.animate({top:((length-1)*liHeight+0.8)+'rem'},500);
+                    	$(this).text("添加应用");
+                    	$div.removeClass("ontop").css('z-index',a);
+                      	$(this).siblings(".up").hide();
+                    	oprStat(userId,'appIndex','clk','release'+datasection);
+                    }
+                    for(var i=0;i<length;i++){
+                  		$("li").eq(i).css("top",(i*liHeight+0.8)+"rem");
+            			var d=i;
+            			if($(".top").eq(d).text()=="解除应用"){
+            				$(".up").eq(d).show();
+            				$(".up").eq(0).hide();
+            			}
+	            	}
+                 
+                });
+                //获取可定制模块
+                var getdata = function(){
+                			$.ajax({
+                                url:"https://ufly.fuiou.com:9618/custom/getAllCustomIcon.sxf",    //请求的url地址
+								//url:"https://ufly.fuiou.com:9618/custom/getAllCustomIcon.sxf",    //请求的url地址
+							    dataType:"jsonp",   //返回格式为json
+							    async:true,//请求是否异步，默认为异步，这也是ajax重要特性
+							    data:{"FM":"{loginId:'"+userId+"',ver:'"+Ver+"',iconType:'0',cellCd:'"+communityCode+"',cityCd:'"+cityCd+"'}"},    //参数值
+							    type:"GET",   //请求方式
+							    jsonp:'jsonpCallback',
+							    contentType: "application/x-www-form-urlencoded;charset=utf-8",
+							    success:function(data){
+							    	//请求成功时处理
+							    	console.log("返回成功"+JSON.stringify(data));
+							    	var lists = data.list,str='';
+							    	if(lists.length){
+							    		for(var i=0;i<lists.length;i++){
+								    		str +='<li class="'+lists[i].id+'"><div class="tittle"><div class="mark">'+lists[i].iconName+'</div><div class="btn2 up">位置上移</div><div class="btn1 top">添加应用</div></div><div class="content"><img src="'+lists[i].customImgUrl+'" /></div></li>'
+								    	}
+								        $("ul").append(str).hide();
+								        for(var i=0;i<lists.length;i++){
+					            			$("li")[i].style.top=(i*liHeight+0.8)+"rem";
+						            	}
+								        
+								        sortData();
+							    	}else{
+							    		$("ul").append("<p class='notip'>活动尚未开始，敬请关注...</p>");
+							    		$("#loading").hide();
+							    	}
+							    	
+							    },
+							    error:function(){
+							    	console.log("getdata返回错误");
+							    }
+							});
+                            
+                    };
+                //排序
+                var sortData = function(){
+        			$.ajax({
+                        url:"https://ufly.fuiou.com:9618/custom/queryCustomedInf.sxf",    //请求的url地址
+					    //url:"https://ufly.fuiou.com:9618/custom/queryCustomedInf.sxf",    //请求的url地址
+					    dataType:"jsonp",   //返回格式为json
+					    async:true,//请求是否异步，默认为异步，这也是ajax重要特性
+					    data:{"FM":"{loginId:'"+userId+"'}"},    //参数值
+					    type:"GET",   //请求方式
+					    jsonp:'jsonpCallback',
+					    contentType: "application/x-www-form-urlencoded;charset=utf-8",
+					    success:function(req){
+					    	console.log("返回成功"+JSON.stringify(req));
+					        //请求成功时处理
+					        drawDetail(req);
+					    },
+					    error:function(){
+					    	console.log("sortData返回错误");
+					        //请求出错处理
+					    }
+					});
+                };
+                var drawDetail = function(data){
+                		var str = "";
+                		for(var i=0;i<data.list.length;i++){
+								if(data.list[i].cellCd==communityCode&&data.list[i].cityCd==cityCd){
+									if(data.list[i].customIds){
+		                			var customIds = data.list[i].customIds.split(',');
+			                		for(var j=0;j<customIds.length;j++){
+									   $("ul").append($("."+customIds[j])); 
+									   $("."+customIds[j]).addClass("ontop").find(".top").text("解除应用");
+									}
+		                		}
+		                		if(data.list[i].notCustomIds){
+		                			var notCustomIds = data.list[i].notCustomIds.split(',');
+			                		for(var z=0;z<notCustomIds.length;z++){
+									   $("ul").append($("."+notCustomIds[z]));	                			
+									}
+			                		if(notCustomIds.length=="3"){
+		                				  $("ul").prepend($(".115"));
+		                			}
+		                		}
+								}
+							}
+                   		for(var a=0;a<$("li").length;a++){
+	            			$("li")[a].style.top=(a*liHeight+0.8)+"rem";
+	            			var d=a;
+	            			if($(".top").eq(d).text()=="解除应用"){
+	            				$(".up").eq(d).show();
+	            				$(".up").eq(0).hide();
+	            			}
+		            	}
+                   		financing();
+                   		$("#loading").hide();
+                   		$("ul").show();
+					}  
+					//调用理财接口换新老用户对应图片
+					var financing = function() {
+						ajaxAsync({
+                            url: "000001",traditional: true, params: {"userId": userId, "ticket":ticket }, success: function (data) {
+                                console.log('000001接口返回数据' + JSON.stringify(data));
+                                if (data.rspCd == "0000") {
+                                	var types = data.isNewUser;
+                                	if(types=="1"){
+                                		$(".115").find(".content").html('<img src="https://ufly.fuiou.com:9618/app/img/financing01.jpg" />');
+                                	}else{
+                                		$(".115").find(".content").html('<img src="https://ufly.fuiou.com:9618/app/img/financing02.jpg" />');
+                                	}
+                                }else {
+                                    showErrorTipCon(data.rspDesc);
+                                }
+                            },status:"2"});
+					}
+					//保存数据
+                var storageData = function(){
+                	var dtd = $.Deferred();
+                	var customIds ="",notCustomIds = "";
+                	for (var i=0;i<$("li").length;i++) {
+                		if($(".top").eq(i).text()=="解除应用"){
+                			customIds += ","+parseInt($("li").eq(i).attr("class"));
+                		}else{
+                			notCustomIds += ","+parseInt($("li").eq(i).attr("class"));
+                		}
+                	}
+                	customIds = "'"+customIds.substring(1)+"'";
+                	notCustomIds ="'"+ notCustomIds.substring(1)+"'";
+                	alert('customIds'+customIds);
+					alert('notCustomIds'+notCustomIds);
+        			$.ajax({
+                        url:"https://ufly.fuiou.com:9618/custom/saveCustomInf.sxf",    //请求的url地址
+					    //url:"https://ufly.fuiou.com:9618/custom/saveCustomInf.sxf",    //请求的url地址
+					    dataType:"jsonp",   //返回格式为json
+					    async:true,//请求是否异步，默认为异步，这也是ajax重要特性
+					    data:{"FM":"{loginId:'"+userId+"',ver:'"+Ver+"',cellCd:'"+communityCode+"',cityCd:'"+cityCd+"',customIds:"+customIds+",notCustomIds:"+notCustomIds+"}"},    //参数值
+					    type:"GET",   //请求方式
+					    jsonp:'jsonpCallback',
+					    contentType: "application/x-www-form-urlencoded;charset=utf-8",
+					    timeout:1000,
+					    success:function(data){
+					    	console.log("返回成功"+JSON.stringify(data)+"：customIds"+customIds+"：notCustomIds"+notCustomIds);
+					    	dtd.resolve();
+					        //请求成功时处理
+					    },
+					    error:function(data){
+					    	dtd.reject();
+					        //请求成功时处理
+					    }
+					});
+					return dtd.promise();
+                };
+        		 registerDeviceready(function () {
+		        	//按返回键同时保存数据
+	        		document.addEventListener("backbutton", function(){
+                        $.when(
+                        	storageData()
+                        ).done(function(){
+							fuApp.exitWebView();
+						}).fail(function(){
+							showErrorTipCon("保存信息失败");
+							fuApp.exitWebView();
+						});
+                    }, true);
+                        $("#returnBtn").click(function(){
+                        	$.when(
+	                        	storageData()
+	                        ).done(function(){
+								fuApp.exitWebView();
+							}).fail(function(){
+								showErrorTipCon("保存信息失败");
+								fuApp.exitWebView();
+							});
+                            oprStat(userId,'appIndex','clk','return');
+                        });
+                        
+                    fuApp.userHome(function(data){
+						communityCode = data.communityCode;
+						cityCd = data.cityCd;
+						fuApp.deviceInfo(function(data){
+							Ver = data.appVer;
+							if(data.os=='android'){
+								Ptp = 2;
+							}else{
+								Ptp = 1;
+							}
+							fuApp.userInfo(function(userInfo){
+								userId = userInfo.loginId;
+								networkTp = userInfo.networkType;
+								ticket = userInfo.ticket;
+								getdata();
+							},function(){
+								showErrorTipCon("用户信息获取失败，请重新登录");
+							});
+						},function(){
+							showErrorTipCon("用户信息获取失败，请重新登录");
+						});
+					},function(){
+						showErrorTipCon("用户信息获取失败，请重新登录");
+					});
+		        	
+				});	    
+            });
+          });
+            
+        </script>
+</html>

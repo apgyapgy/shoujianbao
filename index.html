@@ -9,7 +9,7 @@
 		<meta name="format-detection" content="email=no">
 		<title>首页定制后</title>
 		<link rel="stylesheet" href="https://fly.fuiou.com/app/css/common.min.css" />
-		<link rel="stylesheet" href="https://fly.fuiou.com/app/css/indexAfter.css?v=2.3" />
+		<link rel="stylesheet" href="https://fly.fuiou.com/app/css/indexAfter.css?v=2.5" />
 		<!--<link rel="stylesheet" href="css/indexAfter.css" />-->
 		<script type="text/javascript" src="https://fly.fuiou.com/app/js/jquery-1.8.2.min.js"></script>
 		<script src="https://fly.fuiou.com/app/js/LAB.min.js"></script>
@@ -49,11 +49,10 @@
 							</div>
 							<div class="baina_footer">
 								<p class="good_name"></p><p class="coupon_name"></p>
-								<div class="footeright oprStat onclick" data-url="https://actuser.fuiou.com/baina_productDetail.html" data_md="now_baina">去看看</div>
+								<div class="footeright oprStat onclick" data-url="https://actuser.fuiou.com/baina_productDetail.html" data_md="before_baina">去看看</div>
 							</div>
 						</div>
 					</div>
-						
 				</li>
 				<li class="temai hide">
 					<div class= "mar">
@@ -61,7 +60,7 @@
 							<div class="mark">周边精选</div>
 						</div>
 						<div class="content">
-							<img data_md="sale" src="https://fly.fuiou.com/app/img/mar.jpg" class="tm oprStat onclick" data-url="https://buy.fuiou.com/theme_yuandan.html?subjectId=C66333048492713"/>
+							<img data_md="sale" src="https://fly.fuiou.com/app/img/mar_new.jpg?v=1.2" class="tm oprStat onclick" data-url="https://buy.fuiou.com/theme_yuandan_pro.html"/>
 						</div>
 					</div>
 				</li>
@@ -71,7 +70,7 @@
 							<div class="mark">淘宝红包，天天领用</div>
 						</div>
 						<div class="content">
-							<img data_md="advert" src="https://fly.fuiou.com/app/img/advert.jpg" class="advert oprStat onclicks" data-url="https://buy.fuiou.com/redPackets.html"/>
+							<img data_md="advert" src="https://fly.fuiou.com/app/img/advert.jpg?v=1.1" class="advert oprStat onclicks" data-url="https://buy.fuiou.com/redPackets.html"/>
 						</div>
 					</div>
 				</li>
@@ -88,7 +87,7 @@
 						</div>
 						<div class="tittle">
 							<div class="mark">小宝理财</div>
-							<div class="licai_new oprStat onclicks" data-url="https://lccsac.fuiou.com/ljx_sharehome_two.html?source=appHome" data_md="noviceStandard">免费送黄金，快来看看 </div>
+							<div class="licai_new oprStat onclicks" data-url="https://lccs.fuiou.com:10666/fund/financial_Channel.html?ver=1.3" data_md="noviceStandard">安心好收益，高达9% </div>
 						</div>
 						<div class="content">
 							<div class="old_user hide">
@@ -107,7 +106,7 @@
 										<img src="https://fly.fuiou.com/app/img/new.png" />
 										<p>当日上架(<span></span>)</p>
 									</div>
-									<div class="now_luky onclicks oprStat" data_md="luck_turn" data-url="https://lccsac.fuiou.com/crazy_truntable.html?source=appHome">
+									<div class="now_luky onclicks oprStat" data_md="luck_turn" data-url="https://lccsac.fuiou.com/big_turn.html?source=appHome&code=10040001">
 										<img src="https://fly.fuiou.com/app/img/luck.png" />
 										<p>大转盘(<span></span>)</p>
 									</div>
@@ -115,7 +114,7 @@
 							</div>
 
 							<div class="new_user_01 hide">
-								<div data_md="one_earning" class="oprStat onclicks" data-url="https://lccsac.fuiou.com/ljx_sharehome_two.html?source=appHome">
+								<div data_md="one_earning" class="oprStat onclicks" data-url="https://lccs.fuiou.com:10666/fund/financial_Channel.html?ver=1.3">
 									<img src="https://fly.fuiou.com/app/img/money_03.png" class="profitimg" />
 									<p class="profit_name">（理财金）</p>
 									<p class="profit_new">10%收益当天可取!自己不花一分钱！</p>
@@ -207,13 +206,14 @@
 			}
 			if(window.location.hostname == "192.168.42.33"){
 				_fuappJs = "libs/fuapp.js";
+				serverIP_JS = "";
 			}
 			$LAB.script(_cordovaJs).wait() //文件是并行下载的，却能保证a.js能在b.js之前执行
 				.script(_fuappJs + "?v=" + fuappJs_v)
 				.script(serverIP_JS + "js/common_asy.js?v=" + common_asy_v).wait(function() {
 					var userId, networkTp, Ptp, ticket, Ver, cityCd;
 					var temaiStr = "",onebuyStr = "",licaiStr = "",bananum = 0,door = false,room = true,height = 0,fontsize = parseFloat($('html')[0].style.fontSize);
-
+					var _temai = 0;
 					//传递高度
 					var getHeight = function(height) {
 						console.log(height);
@@ -377,7 +377,6 @@
 					};
 					var sortDetail = function(data) {
 					    var advert=1;
-					    var _temai = 1;
 						if(data.list.length > 0) {
 							var tailor = true;
 							//限制城市
@@ -389,11 +388,6 @@
 									var customIds = data.list[i].customIds.split(',');
 									/*因理财默认定制,如果用户定制有理财模块,高度直接计算,没有这加上理财模块高度,即定制模块加1*/
 									/*现因多加广告模块默认定制,且未给用户定制,所以全部加上一个模块高度*/
-									if(data.list[i].customIds.indexOf("118") > -1){ //如果定制特卖
-										_temai = 0;
-									}else{
-										_temai = 1;//未定制特卖
-									}
 									console.log("temai:",_temai);
 									if(data.list[i].customIds.indexOf("115") > -1) {//是否定制了理财模块，
 										height = Math.floor(fontsize * (5.35 * (customIds.length + _temai + bananum + advert) + 2.2));
@@ -406,7 +400,7 @@
 									for(var j = 0; j < customIds.length; j++) {
 										switch(customIds[j]) {
 											case '118':
-												//getMarData('118');
+												getMarData('118');
 												break;
 											case '115':
 												break;
@@ -627,6 +621,7 @@
 						//A100019477  A100024945  A100000837 A100012827
 					    if(communityCode == "A100019477" || communityCode=="A100024945" || communityCode=="A100000837" || communityCode=="A100012827"){
 					    	$(".temai").removeClass("hide");
+					    	_temai = 1;
 					    }
 					}
 					/*倒计时*/
@@ -728,6 +723,11 @@
 							"barFontColor": "FFFFFFFF",
 							"scrollToHead": false
 						};
+						if($(this).hasClass("tm")){
+							param_obj.barName = "社区精选";
+							param_obj.barColor = "FFFFFFFF";
+							param_obj.barFontColor = "FF000000";
+						}
 						openNewPage(url, param_obj);
 					});
 					/*H5打开新的页面窗口,跳转不带原生头部*/

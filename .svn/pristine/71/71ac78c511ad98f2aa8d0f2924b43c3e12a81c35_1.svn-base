@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-type" content="text/html;charset=utf-8">
+		<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="format-detection" content="email=no">
+		<title>首页定制后</title>
+		<link rel="stylesheet" href="https://ufly.fuiou.com:9618/app/css/common.min.css" />
+		<link rel="stylesheet" href="https://ufly.fuiou.com:9618/app/css/indexAfter.css?v=2.1" />
+		<script type="text/javascript" src="https://ufly.fuiou.com:9618/app/js/jquery-1.8.2.min.js"></script>
+		<script src="https://ufly.fuiou.com:9618/app/js/LAB.min.js"></script>
+		<script src="https://ufly.fuiou.com:9618/app/js/spin.min.js"></script>
+		<script src="https://ufly.fuiou.com:9618/app/js/theme_ver.js"></script>
+		<script src="https://ufly.fuiou.com:9618/app/js/fontSize.js"></script>
+
+	</head>
+
+	<body>
+		<div class="allcontent">
+			<ul>
+				<li class="hide baina">
+					<div class="baina">
+						<div class="tittle">
+							<div class="mark">白拿</div>
+						</div>
+						<div class="content bainaIng hide">
+							<div class="bainaing_top">
+								<img src="https://ufly.fuiou.com:9618/app/img/load01.jpg" class="oprStat onclick topimg" data-url="" data_md="now_alltpic"/>
+								<div>进行中</div>
+							</div>
+							<div class="baina_footer">
+								<p class="good_name"></p>
+								<p class="coupon_name"></p>
+								<div class="footeright oprStat onclick" data-url="https://actuser.fuiou.com/baina_productDetail.html?reqData={action:cellActDetail,loginId:' + userId + ',cellCd:' + communityCode + '}" data_md="now_baina">立刻白拿</div>
+							</div>
+						</div>
+						<div class="content countDowm hide">
+							<div class="baina_top">
+								<img src="https://ufly.fuiou.com:9618/app/img/load02.jpg" class="oprStat onclick topimg" data-url="" data_md="alltpic"/>
+								<div class="baina_time">
+									<p class="baina_text01">距离抢拿还剩</p>
+									<div class="countdown">
+										<span class="time01">99</span><i></i><span class="time02">99</span><i></i></span><span class="time03">99</span>
+									</div>
+									<p class="baina_text02"><span></span>人已关注</p>
+								</div>
+							</div>
+							<div class="baina_footer">
+								<p class="good_name"></p><p class="coupon_name"></p>
+								<div class="footeright oprStat onclick" data-url="https://actuser.fuiou.com/baina_productDetail.html?reqData={action:cellActDetail,loginId:' + userId + ',cellCd:' + communityCode + '}" data_md="now_baina">去看看</div>
+							</div>
+						</div>
+					</div>
+						
+				</li>
+				<li class="adverts hide">
+					<!--<div class= "mar">-->
+						<!--<div class="tittle">-->
+							<!--<div class="mark">现金红包</div>-->
+						<!--</div>-->
+						<!--<div class="content">-->
+							<!--<img data_md="advert" src="https://ufly.fuiou.com:9618/app/img/advert.png" class="advert oprStat onclicks" data-url="https://ufly.fuiou.com:9618/redEnvelope/app/RE20170713.html"/>-->
+						<!--</div>-->
+					<!--</div>-->
+				</li>
+				<li class="115 hide">
+					<div class="financing">
+						<div class="shadow">
+							<div class="errorTip">
+								<div class="errorTitle">
+									<span>提示</span>
+								</div>
+								<div class="errorContent"></div>
+								<div class="errorBtn" id="errorBtn">确&nbsp;定</div>
+							</div>
+						</div>
+						<div class="tittle">
+							<div class="mark">小宝理财</div>
+							<div class="licai_new oprStat onclicks" data-url="https://lccs.fuiou.com:10666/fund/financial_Channel.html" data_md="noviceStandard">安心好收益，高达8%</div>
+						</div>
+						<div class="content">
+							<div class="old_user hide">
+								<div class="top_content oprStat onclicks" data_md="golook" data-url="https://lccs.fuiou.com:10666/fund/financial_Channel.html">
+									<div class="left_icon02">最新收益 <span></span></div>
+									<div class="right_icon_old">去看看</div>
+									<p class="oldprofit"><span></span></p>
+									<p class="profit_name">累计收益</p>
+								</div>
+								<div class="footerBtn">
+									<div class="now_time onclicks oprStat" data_md="expiring" data-url="https://lccs.fuiou.com:10666/fund/my_assets.html?source=appHome">
+										<img src="https://ufly.fuiou.com:9618/app/img/time.png" />
+										<p>即将到期(<span></span>)</p>
+									</div>
+									<div class="no_time onclicks oprStat" data_md="today" data-url="https://lccs.fuiou.com:10666/fund/Transfer_page.html?action=proList">
+										<img src="https://ufly.fuiou.com:9618/app/img/new.png" />
+										<p>当日上架(<span></span>)</p>
+									</div>
+									<div class="now_luky onclicks oprStat" data_md="luck_turn" data-url="https://lccsac.fuiou.com/crazy_truntable.html?source=appHome">
+										<img src="https://ufly.fuiou.com:9618/app/img/luck.png" />
+										<p>大转盘(<span></span>)</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="new_user_01 hide">
+								<div data_md="one_earning" class="oprStat onclicks" data-url="https://lccs.fuiou.com:10666/fund/financial_Channel.html">
+									<img src="https://ufly.fuiou.com:9618/app/img/money_03.png" class="profitimg" />
+									<p class="profit_name">（理财金）</p>
+									<p class="profit_new">10%收益当天可取!自己不花一分钱！</p>
+									<div class="onebuy_btn">一键体验领收益</div>
+								</div>
+							</div>
+
+							<div class="new_user_02 hide">
+								<div class="right_icon onclicks" data-url="https://lccs.fuiou.com:10666/fund/Transfer_page.html?action=bindCard">
+									<img src="https://ufly.fuiou.com:9618/app/img/bangcard.png" />绑定银行卡</div>
+								<img src="https://ufly.fuiou.com:9618/app/img/money_03.png" class="profitimg" />
+								<p class="profit_name">已投资金额</p>
+								<p class="profit_new ">绑定银行卡后收益到期将直接转入银行卡</p>
+								<div class="onebuy_btn"><img class="calender" src="https://ufly.fuiou.com:9618/app/img/calendar.png" />剩余<span></span>天可取出</div>
+							</div>
+
+							<div class="new_user_03 hide">
+								<div class="right_icon onclicks" data-url="https://lccs.fuiou.com:10666/fund/Transfer_page.html?action=bindCard">
+									<img src="https://ufly.fuiou.com:9618/app/img/bangcard.png" />绑定银行卡</div>
+								<p class="profit">￥<span></span></p>
+								<p class="profit_name">到期收益</p>
+								<div class="onebuy_btns oprStat quchusy" data_md="earning" data-url="https://lccs.fuiou.com:10666/fund/financial_Channel.html">取出收益</div>
+							</div>
+
+						</div>
+					</div>
+				</li>
+				<li class="118 hide">
+					<div class= "mar">
+						<div class="tittle">
+							<div class="mark">特卖</div>
+							<div class="shopcar oprStat onclick" data_md="shopcar" data-url="https://buy.fuiou.com/tuangou_shoppingCart.html">
+								<span class="red-circle"></span>购物车
+							</div>
+						</div>
+						<div class="content">
+							<img data_md="toppic" src="" class="toppic oprStat onclick" data-url=""/>
+							<div class="container_pic">
+								<img data_md="pic01" src="" class="pic01 oprStat onclick" data-url=""/>
+								<img data_md="pic02" src="" class="pic01 oprStat onclick" data-url=""/>
+								<img data_md="pic03" src="" class="pic01 oprStat onclick" data-url=""/>
+								<img data_md="pic04" src="" class="pic01 oprStat onclick" data-url=""/>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+			</div>
+	</body>
+	<script src="https://ufly.fuiou.com:9618/app/js/stat_o2o.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			var createLoadingTip = function() {
+				var opts = {
+					lines: 9, // 花瓣数目
+					length: 0, // 花瓣长度
+					width: 6, // 花瓣宽度
+					radius: 12, // 花瓣距中心半径
+					corners: 1, // 花瓣圆滑度 (0-1)
+					rotate: 0, // 花瓣旋转角度
+					direction: 1, // 花瓣旋转方向 1: 顺时针, -1: 逆时针
+					color: '#26bcf9', // 花瓣颜色
+					speed: 1, // 花瓣旋转速度 
+					trail: 85, // 花瓣旋转时的拖影(百分比)
+					shadow: false, // 花瓣是否显示阴影
+					hwaccel: false, //spinner 是否启用硬件加速及高速旋转     
+					className: 'spinner', // spinner css 样式名称
+					zIndex: 999, // spinner的z轴 (默认是2000000000)
+					top: '50%', // spinner 相对父容器Top定位 单位 px
+					left: '50%' // spinner 相对父容器Left定位 单位 px
+				};
+				var spinner = new Spinner(opts); //实例化loading图案
+				var target = $("#loading").get(0);
+				spinner.spin(target);
+				return spinner;
+			}
+			var spinner = createLoadingTip();
+			var iOS = /(iPad|iPhone|iPod)/g.test(window.navigator.userAgent);
+			var Android = /Android/i.test(window.navigator.userAgent);
+			var _cordovaJs, _fuappJs = 'https://ufly.fuiou.com:9618/app/libs/fuapp.js';
+			var serverIP_JS = "https://ufly.fuiou.com:9618/app/"; //服务端JS引入地址
+			if(iOS) {
+				_cordovaJs = 'https://ufly.fuiou.com:9618/app/libs/js/ios/cordova.js';
+			} else if(Android) {
+				_cordovaJs = 'https://ufly.fuiou.com:9618/app/libs/js/android/cordova.js';
+			} else {
+				_fuappJs = "libs/fuapp.js";
+				serverIP_JS = "";
+			}
+			//          _fuappJs = "libs/fuapp.js";
+			$LAB.script(_cordovaJs).wait() //文件是并行下载的，却能保证a.js能在b.js之前执行
+				.script(_fuappJs + "?v=" + fuappJs_v)
+				.script(serverIP_JS + "js/uat-common_asy.js?v=" + common_asy_v).wait(function() {
+					var userId, networkTp, Ptp, ticket, Ver, cityCd;
+					var temaiStr = "",onebuyStr = "",licaiStr = "",bananum = 0,door = false,room = true,height = 0,fontsize = parseFloat($('html')[0].style.fontSize);
+
+					//传递高度
+					var getHeight = function(height) {
+						console.log(height);
+						fuApp.receiveParams(function(data){
+							 	//成功；
+							},function(){
+								showErrorTipCon("用户信息获取失败，请重新登录");
+								$(".errorTip").css("top","15%");
+						    },{"webHeight":height});
+					};
+					//替换理财数据
+					var to_financing = function(data) {
+						if(data.newUserStatus) {
+							$('.profit span').html(data.newUserStatus.earning);
+							$('.onebuy_btn span').html(data.newUserStatus.endTm);
+							if(data.newUserStatus.bindFlag != "0") {
+								$(".right_icon").addClass("hide");
+							}
+						} else {
+							var todyIncome = Number(data.oldUserStatus.todyIncome)<0?data.oldUserStatus.todyIncome:"+"+data.oldUserStatus.todyIncome;
+							$('.left_icon02>span').html(todyIncome);
+							$(".oldprofit>span").html(data.oldUserStatus.totalIncome + " 元");
+							$('.now_time span').html(data.oldUserStatus.dueProductsCount);
+							$(".no_time span").html(data.oldUserStatus.saleProductsCount);
+							$('.now_luky span').html(data.oldUserStatus.lotteryNumber);
+							if(!data.oldUserStatus.todyIncome) {
+								$(".oldprofit").text("暂无收益");
+							}
+						}
+					}
+					//替换白拿数据
+					var to_baina = function(req) {
+						if(req.rcd=="0003") {
+							$('.good_name').html(req.goodsNm);
+							$('.coupon_name').html(req.actNm);
+						} else if(req.rcd=="0002"){
+							$('.baina_text02 span').html(req.focusCnt);
+							$('.good_name').html(req.goodsNm);
+							$('.coupon_name').html(req.actNm);
+						}else{
+							$('.baina').hide();
+						}
+					}
+					//替换特卖图片数据
+					var to_mar = function(data) {
+						var blocks = data.blocks;
+						var background = blocks[0].background;
+						$('.toppic').attr("src",serverAd + blocks[0].imgUrl).attr("data-url", blocks[0].linkUrl);
+						for(var i=1;i<=$('.pic01').length;i++){
+							$('.pic01').eq(i-1).attr("src",serverAd + blocks[i].imgUrl).attr("data-url", blocks[i].linkUrl);
+						}
+						$('.container_pic').css('background', background);
+					}
+					//特卖接口
+					var getMarData = function(a) {
+						var data = JSON.parse(window.localStorage.getItem("mar_data"));
+						$('.118').removeClass("hide");
+						if(data != null) {
+							to_mar(data);
+						}
+						/*小宝特卖*/
+						ajaxAsync({
+							url: "200015",
+							traditional: true,
+							params: {
+								"networkTp": networkTp,
+								"blockTp": "1"
+							},
+							success: function(req) {
+//								console.log('200015接口返回数据' + JSON.stringify(data));
+								if(req.rspCd == "0000") {
+									getCarData();
+									var data = JSON.parse(window.localStorage.getItem("mar_data"));
+									if(data!=null){
+										var block = req.blocks,blocks = data.blocks;
+										if(block[0].imgUrl!=blocks[0].imgUrl){
+											$('.toppic').attr("src",serverAd + block[0].imgUrl).attr("data-url",blocks[0].linkUrl);
+										}
+										for(var i=1;i<=$('.pic01').length;i++){
+											if(block[i].imgUrl==blocks[i].imgUrl){
+												$('.pic01').eq(i-1).attr("src",serverAd + block[i].imgUrl).attr("data-url",blocks[i].linkUrl);
+											}
+										}
+										$('.container_pic').css('background', block[0].background);
+									}else{
+										to_mar(req);
+									}
+									window.localStorage.setItem("mar_data",JSON.stringify(req));
+								} else if(data.rspDesc == "登录超时") {
+									console.log("登录超时");
+								} else {
+									$('.' + a).html('<p class="errorsTip">数据获取失败，请稍后再试。</p>');
+									showErrorTipCon(data.rspDesc);
+									$(".errorTip").css("top", "15%");
+								}
+							},a: a});
+
+					}
+					var getCarData = function() {
+						/* 购物车数量*/
+						ajaxAsync({
+							url: "100040",
+							params: {
+								userId: userId
+							},
+							success: function(data) {
+								console.log("40返回数据：" + JSON.stringify(data));
+								if(data.rspCd == "0000") {
+									if(data.cartOrders.length == "0") { //购物车无数据
+										$(".red-circle").css("display", "none");
+									} else {
+										var cartOrders = data.cartOrders;
+										if(cartOrders.length > 0) {
+											var total_number = 0;
+											for(var i = 0; i < cartOrders.length; i++) {
+												for(var j = 0; j < cartOrders[i].groupons.length; j++) {
+													total_number += cartOrders[i].groupons[j].num;
+												}
+											}
+											$(".red-circle").css("display", "block");
+											$(".red-circle").html(total_number);
+										}
+									}
+								} else if(data.rspDesc == "登录超时") {
+									console.log("登录超时");
+								} else {
+									showErrorTipCon("接口100040请求失败，原因：" + data.rspDesc);
+									$(".errorTip").css("top", "15%");
+								}
+							}
+						});
+					}
+						//排序
+					var sortData = function() {
+						$.ajax({
+							url: "https://ufly.fuiou.com:9618/custom/queryCustomedInf.sxf", //请求的url地址
+							dataType: "jsonp", //返回格式为json
+							async: true, //请求是否异步，默认为异步，这也是ajax重要特性
+							// data:{"FM":"{loginId:'"+userId+"',ver:'"+Ver+"',cellCd:'"+communityCode+"',cityCd:'"+cityCd+"'}"},    //参数值
+							data: {
+								"FM": "{loginId:'" + userId + "'}"
+							}, //参数值
+							type: "GET", //请求方式
+							jsonp: 'jsonpCallback',
+							contentType: "application/x-www-form-urlencoded;charset=utf-8",
+							success: function(req) {
+								console.log("queryCustomedInf返回成功" + JSON.stringify(req));
+								if(req.retCode == "0000") {
+									sortDetail(req);
+								} else {
+									showErrorTipCon(req.rspDesc);
+									$(".errorTip").css("top", "15%");
+								}
+								//请求成功时处理
+							},
+							error: function() {
+								console.log("返回错误");
+								//请求出错处理
+							}
+						});
+					};
+					var sortDetail = function(data) {
+						    var advert=1;
+							if(data.list.length > 0) {
+								var tailor = true;
+								//限制城市
+//								if(cityCd=="5210"||cityCd=="3020"||cityCd=="2900"||cityCd=="6530"||cityCd=="3050"||cityCd=="3040"||cityCd=="5510"){
+//									advert=1;
+//								}
+								for(var i = 0; i < data.list.length; i++) {
+									if(data.list[i].cellCd == communityCode && data.list[i].cityCd == cityCd && data.list[i].customIds != '') {
+										var customIds = data.list[i].customIds.split(',');
+										/*因理财默认定制,如果用户定制有理财模块,高度直接计算,没有这加上理财模块高度,即定制模块加1*/
+										/*现因多加广告模块默认定制,且未给用户定制,所以全部加上一个模块高度*/
+										if(data.list[i].customIds.indexOf("115") > -1) {//是否定制了理财模块，
+											height = Math.floor(fontsize * (5.35 * (customIds.length + bananum + advert) + 2.2));
+										} else {
+											height = Math.floor(fontsize * (5.35 * (customIds.length + bananum + 1+advert) + 2.2));
+										}
+										getHeight(height);
+										door = true;
+										tailor = false;
+										for(var j = 0; j < customIds.length; j++) {
+											switch(customIds[j]) {
+												case '118':
+													getMarData('118');
+													break;
+												case '115':
+													break;
+											}
+										}
+										$(".allcontent").append('<div class="after_add"><div class="addbtn oprStat scrollToHead" data-url="https://ufly.fuiou.com:9618/app/personalTailor.html" data_md="addbtn">全部应用</div></div>');
+									}
+								}
+								if(tailor) {
+									height = Math.ceil(fontsize * (7.7 + (bananum + advert)* 5.35));
+									getHeight(height);
+									door = true;
+									$(".allcontent").append('<div class="after_add"><div class="addbtn oprStat scrollToHead" data-url="https://ufly.fuiou.com:9618/app/personalTailor.html" data_md="addbtn">全部应用</div></div>');
+									//$('.allcontent').append('<div class="indexbefor"><img src="https://ufly.fuiou.com:9618/app/img/indexlicai.png" /><div class="addbtn_befor oprStat scrollToHead" data_md="addbtn_befor" data-url="https://ufly.fuiou.com:9618/app/personalTailor.html">全部应用</div></div>');
+								}
+							} else {
+								//var height = Math.ceil(parseFloat($('html')[0].style.fontSize)*(5.5+bananum*5.35));
+								height = Math.ceil(fontsize * (10.85 + (bananum + advert) * 5.35));
+								getHeight(height);
+								door = true;
+								$('.allcontent').append('<div class="indexbefor"><img src="https://ufly.fuiou.com:9618/app/img/indexlicai.png" /><div class="addbtn_befor oprStat scrollToHead" data_md="addbtn_befor" data-url="https://ufly.fuiou.com:9618/app/personalTailor.html">全部应用</div></div>');
+							}
+						}
+						/*白拿*/
+					var getBainaData = function() {
+						var className = window.localStorage.getItem("bainadata"),
+						data = JSON.parse(window.localStorage.getItem("baina_data"));
+						$('.baina').removeClass("hide");
+						if(data != null) {
+							$('.' + className).removeClass("hide");
+							$('.topimg').attr("src",data.img).attr("data-url", data.url);
+							to_baina(data);
+						}
+						$.ajax({
+							url: "https://actuser.fuiou.com/reqAction", //请求的url地址
+							dataType: "jsonp", //返回格式为json
+							async: true, //请求是否异步，默认为异步，这也是ajax重要特性
+							data: {
+								"reqData": "{action:appHome,loginId:" + userId + ",cellCd:" + communityCode + "}"
+							}, //参数值
+							type: "GET", //请求方式
+							jsonp: 'jsonpCallback',
+							timeout: 5000,
+							cache: false, //不缓存数据
+							contentType: "application/x-www-form-urlencoded;charset=utf-8",
+							success: function(req) {
+								console.log('baina接口返回数据' + JSON.stringify(req));
+								if(req.rcd == "0002" || req.rcd == "0003") {
+									bananum = 1;
+								}else{
+									bananum = 0;
+								}
+								if(door) {
+									height = height + 5.35 * fontsize;
+									console.log("白拿后"+height);
+									getHeight(height);
+								}
+								//请求成功时处理
+								//console.log('baina接口返回数据' + JSON.stringify(req));
+								if(req.rDesc == "成功") {
+									bainadata(req);
+								} else {
+									$('.baina').html('<p class="errorsTip">数据获取失败，请稍后再试。</p>');
+									showErrorTipCon(req.rDesc);
+									$(".errorTip").css("top", "15%");
+								}
+							},
+							error: function(XMLHttpRequest, textStatus, errorThrown) {
+								console.log("XMLHttpRequest:" + XMLHttpRequest.status + "||XMLHttpRequest.readyState:" + XMLHttpRequest.readyState + "||textStatus:" + textStatus + "||errorThrown:" + errorThrown);
+							}
+						});
+					}
+					var bainadata = function(req) {
+						var rcd = req.rcd,maxtime = (req.startTm - req.currTm) / 1000;
+						if(rcd == "0003") {
+							$(".bainaIng").removeClass("hide");
+							$(".countDowm").addClass("hide");
+							window.localStorage.setItem("bainadata", 'bainaIng');
+						} else if(rcd == "0002") {
+							CountDown(maxtime);
+							$(".countDowm").removeClass("hide");
+							$(".bainaIng").addClass("hide");
+							window.localStorage.setItem("bainadata", 'countDowm');
+						} else if(rcd == "0001") {
+							$('.baina').hide();
+						} else if(rcd == '9997') {
+							console.log("登录超时");
+						} else {
+							showErrorTipCon("baina信息获取失败" + rcd);
+							$(".errorTip").css("top", "15%");
+						};
+						var data = JSON.parse(window.localStorage.getItem("baina_data")); 
+						if(data==null||req.img!=data.img){
+							$('.topimg').attr("src",req.img).attr("data-url", req.url);
+						}
+						to_baina(req);
+						window.localStorage.setItem("baina_data", JSON.stringify(req));
+					}
+					/*小宝理财	*/
+					var getFinancingData = function(a) {
+						var className = window.localStorage.getItem("financing"),
+						data = JSON.parse(window.localStorage.getItem("financing_data"));
+						$('.115').removeClass("hide");
+						if(data != null) {
+							$('.' + className).removeClass("hide");
+							to_financing(data);
+						}
+						ajaxAsync({
+							url: "000001",traditional: true,params: {"userId": userId,"ticket": ticket},
+							success: function(data) {
+								console.log('000001接口返回数据' + JSON.stringify(data));
+								if(data.rspCd == "0000") {
+									window.localStorage.setItem("financing_data", JSON.stringify(data));
+									financing(a, data);
+									ajaxAsync({
+										url: "fund_takeearnings",
+										traditional: true,
+										params: {
+											"userId": userId,
+											"ticket": ticket,
+											"changeAmount": '0',
+											"productCd": 'FXBXRZX_6'
+										},
+										success: function(data1) {
+											console.log('fund_takeearnings接口返回数据' + JSON.stringify(data1));
+											if(data1.rspCd == "0000") {
+												$('.allcontent').on("click", ".quchusy", function() {
+													$('.shadow,.errorTip').css("display", "block");
+													if(data.newUserStatus.bindFlag == "0") {
+														$(".errorContent").html("您还未绑定银行卡，我们无法给您发放收益");
+														$(".errorBtn").unbind("click").click(function() {
+															$(".errorTip,.shadow").css("display", "none");
+															var url = 'https://lccs.fuiou.com:10666/fund/Transfer_page.html?action=bindCard';
+															var param_obj = {
+																"url": url,
+																"data": "1",
+																"showBar": "0",
+																"barColor": "FFFF3333",
+																"barFontColor": "FFFFFFFF",
+																"scrollToHead": false
+															};
+															openNewPage(url, param_obj);
+														});
+													} else if(data1.statusOut == '0') {
+														$(".errorContent").html("取出成功，取出收益将在1个工作日内到账!");
+														$(".errorBtn").click(function() {
+															$(".errorTip,.shadow").css("display", "none");
+														});
+													} else if(data1.statusOut == '1') {
+														$(".errorContent").html("投资“定期”产品任意金额后即可取出哦");
+														$(".errorBtn").click(function() {
+															$(".errorTip,.shadow").css("display", "none");
+															var url = 'https://lccs.fuiou.com:10666/fund/financial_Channel.html';
+															var param_obj = {
+																"url": url,
+																"data": "1",
+																"showBar": "0",
+																"barColor": "",
+																"barFontColor": "",
+																"scrollToHead": false
+															};
+															openNewPage(url, param_obj);
+														});
+													} else {
+
+													}
+												})
+											} else {
+												showErrorTipCon(data1.rspDesc);
+												$(".errorTip").css("top", "15%");
+											}
+										},status: "3"});
+								} else {
+									$('.' + a).html('<p class="errorsTip">数据获取失败，请稍后再试。</p>');
+									showErrorTipCon(data.rspDesc);
+									$(".errorTip").css("top", "15%");
+								}
+							},status: "2",a: a});
+					}
+
+					//理财
+					var financing = function(a, data) {
+						var types = data.isNewUser;
+						if(types == '' || typeof(types) == 'undefined') {
+							console.log('是否新用户' + types)
+						} else if(types == "1") {
+//							if(cityCd=="5210"||cityCd=="3020"||cityCd=="2900"||cityCd=="6530"||cityCd=="3050"||cityCd=="3040"||cityCd=="5510"){
+								//$('.115').before($('.adverts'));
+                            	$('.adverts').removeClass('hide');
+//							}
+							var firstStatus = data.newUserStatus.firstStatus;
+							/*新用户未购买*/
+							if(firstStatus == "" || firstStatus == "4") {
+								$(".new_user_01").removeClass("hide").siblings().addClass("hide");
+								window.localStorage.setItem("financing", 'new_user_01');
+							} else if(firstStatus == "1") {
+								$(".new_user_02").removeClass("hide").siblings().addClass("hide");
+								window.localStorage.setItem("financing", 'new_user_02');
+							} else {
+								$(".new_user_03").removeClass("hide").siblings().addClass("hide");
+								window.localStorage.setItem("financing", 'new_user_03');
+							}
+							if(data.newUserStatus.bindFlag != "0") {
+								$(".right_icon").addClass("hide");
+							}
+						} else {
+							$(".old_user").removeClass("hide").siblings().addClass("hide");
+							window.localStorage.setItem("financing", 'old_user');
+//							if(cityCd=="5210"||cityCd=="3020"||cityCd=="2900"||cityCd=="6530"||cityCd=="3050"||cityCd=="3040"||cityCd=="5510"){
+								$('.115').after($('.adverts'));
+                            	$('.adverts').removeClass('hide');
+//							}
+						}
+						to_financing(data);
+					}
+
+					/*倒计时*/
+					function CountDown(maxtime) {
+						var hh = 60 * 60,
+							mm = 60;
+						var timer = setInterval(function() {
+							if(maxtime >= 0) {
+								var h = Math.floor(maxtime / hh);
+								h = h < 10 ? "0" + h : "" + h;
+								var m = Math.floor(maxtime % hh / mm);
+								m = m < 10 ? "0" + m : "" + m;
+								var s = maxtime % hh % mm;
+								s = s < 10 ? "0" + s : "" + s;
+								maxtime--;
+							} else {
+								clearInterval(timer);
+								door = false;
+								getBainaData();
+							}
+							$('.time01').html(h);
+							$('.time02').html(m);
+							$('.time03').html(s);
+						}, 1000);
+
+					}
+
+					registerDeviceready(function() {
+						var userHome = function(){
+							var dtd = $.Deferred();
+			        		fuApp.userHome(function(data){
+			        			console.log("userHome"+JSON.stringify(data))
+				        		 if(data.rspCode == "0000"){
+				        			communityCode = data.communityCode;
+									cityCd = data.cityCd;
+									dtd.resolve();
+				        		}
+							},function(){
+								showErrorTipCon("用户信息获取失败，请重新登录");
+								$(".errorTip").css("top","15%");
+								dtd.resolve();
+							});
+							return dtd.promise();
+			        	}
+						var deviceInfo = function(){
+							var dtd = $.Deferred();
+							fuApp.deviceInfo(function(data){
+				        		if(data.rspCode == "0000"){
+									Ver = data.appVer;
+									if(data.os=="android"){
+										Ptp = 2;
+									}else{
+										Ptp = 1;
+									}
+									dtd.resolve();
+				        		}
+							},function(){
+								showErrorTipCon("用户信息获取失败，请重新登录");
+								$(".errorTip").css("top","15%");
+								dtd.resolve();
+							});
+							return dtd.promise();
+						}
+						
+						var userInfo = function(){
+							var dtd = $.Deferred();
+							fuApp.userInfo(function(userInfo){
+								if(userInfo.rspCode == "0000"){
+									userId = userInfo.loginId;
+									networkTp = userInfo.networkType?userInfo.networkType:1;
+									ticket = userInfo.ticket;
+									dtd.resolve();
+				        		}
+							},function(){
+								showErrorTipCon("用户信息获取失败，请重新登录");
+								$(".errorTip").css("top","15%");
+								dtd.resolve();
+							});
+							return dtd.promise();
+						}
+						$.when(
+	                        	userInfo(),deviceInfo(),userHome()
+	                        ).done(function(){
+	                        	getBainaData(),getFinancingData('115'),sortData()
+							}).fail(function(){
+								showErrorTipCon("用户信息获取失败，请重新登录");
+								$(".errorTip").css("top","15%");
+							});
+					});
+					/*H5打开新的页面窗口,跳转带原生头部*/
+					$('.allcontent').on("click", ".onclick", function() {
+						var url = $(this).attr('data-url');
+						console.log(url);
+						var param_obj = {
+							"url": url,
+							"data": "1",
+							"showBar": "1",
+							"barColor": "FFFF3333",
+							"barFontColor": "FFFFFFFF",
+							"scrollToHead": false
+						};
+						openNewPage(url, param_obj);
+					});
+					/*H5打开新的页面窗口,跳转不带原生头部*/
+					$('.allcontent').on("click", ".onclicks", function() {
+						var url = $(this).attr('data-url');
+						var param_obj = {
+							"url": url,
+							"data": "1",
+							"showBar": "0",
+							"barColor": "FFFF3333",
+							"barFontColor": "FFFFFFFF",
+							"scrollToHead": false
+						};
+						openNewPage(url, param_obj);
+					});
+					/*H5打开新的页面窗口,跳转不带原生头部，返回顶部*/
+					$('.allcontent').on("click", ".scrollToHead", function() {
+						var url = $(this).attr('data-url');
+						var param_obj = {
+							"url": url,
+							"data": "1",
+							"showBar": "0",
+							"barColor": "FFFF3333",
+							"barFontColor": "FFFFFFFF",
+							"scrollToHead": true
+						};
+						openNewPage(url, param_obj);
+					});
+					/*打开新的页面窗口*/
+					var openNewPage = function(url, param_obj) {
+						if(url) {
+							fuApp.openNewPage(function() {
+								//成功
+							}, function() {
+								//失败
+								showErrorTipCon("打开新的页面窗口失败");
+								$(".errorTip").css("top", "15%");
+							}, param_obj);
+						}
+					};
+					/*数据买点*/
+					$('.allcontent').on("click", ".oprStat", function() {
+						var SJMD = $(this).attr('data_md');
+						oprStat(userId, 'appIndex', 'clk', SJMD);
+					});
+
+					/*H5打开原生页面*/
+					var timeOut = function() {
+						var data_obj = {
+							"appId": "102"
+						};
+						fuApp.toNative(function() {
+							//成功
+						}, function() {
+							//失败
+							showErrorTipCon("打开新的页面窗口失败");
+							$(".errorTip").css("top", "15%");
+						}, data_obj);
+					}
+
+					var showToast = function(msg) {
+						fuApp.showToast(function(msg) {
+							//成功
+						}, function() {
+
+						}, {
+							"msg": msg
+						});
+					}
+
+				})
+
+		})
+	</script>
+
+</html>

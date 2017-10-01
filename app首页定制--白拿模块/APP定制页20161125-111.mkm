@@ -1,0 +1,14 @@
+<MKM version="2.0" imageFileUrl="file:///C:/Users/user/Desktop/app%e9%a6%96%e9%a1%b5%e5%ae%9a%e5%88%b6--%e7%99%bd%e6%8b%bf%e6%a8%a1%e5%9d%97/APP%e5%ae%9a%e5%88%b6%e9%a1%b520161125-111.jpg">
+  <Marks>
+    <LengthMark direction="3" color="16711680" length="43" x="661" y="1180"/>
+    <LengthMark direction="3" color="16711680" length="53" x="677" y="1273"/>
+    <LengthMark direction="3" color="16711680" length="44" x="639" y="2243"/>
+    <LengthMark direction="12" color="16711680" length="153" x="568" y="2265"/>
+    <LengthMark direction="12" color="16711680" length="151" x="570" y="1204"/>
+    <ColorMark defaultDirection="9" colorSystem="hex" direction="5" color="16711680" targetColor="26571" offsetX="25" offsetY="10" x="705" y="2250"/>
+    <LengthMark direction="3" color="16711680" length="215" x="348" y="2292"/>
+    <LengthMark direction="12" color="16711680" length="160" x="0" y="2510"/>
+    <LengthMark direction="3" color="16711680" length="30" x="248" y="2504"/>
+    <ColorMark defaultDirection="9" colorSystem="hex" direction="9" color="16711680" targetColor="16379880" offsetX="25" offsetY="10" x="164" y="2520"/>
+  </Marks>
+</MKM>

@@ -42,7 +42,15 @@ if(isDebug){
 			success(obj);
 		},
 		userInfo:function(success, failed){
-			var obj = {"avatar":"https://static.fuiou.com/sys/fly/avatar/fly_1707171718158516.jpg","cellCd":"A100000837","cellNm":"都市庭院","loginId":"15316117950","mobile":"15316117950","networkType":"0","ticket":"c5a7fe4b-deaf-4569-b277-c45b1b49dc45","token":"c5a7fe4b-deaf-4569-b277-c45b1b49dc45","rspCode":"0000","rspDesc":"成功"}
+			var obj = {
+				"avatar":"https://static.fuiou.com/sys/fly/avatar/fly_1707171718158516.jpg",
+				"cellCd":"A100000837","cellNm":"都市庭院","loginId":"15316117950",
+				"mobile":"15316117950",
+				"networkType":"0",
+				"ticket":"e7fc10cf-d8d7-46c0-844c-8d163bb5e5ae",
+				"token":"e7fc10cf-d8d7-46c0-844c-8d163bb5e5ae",
+				"rspCode":"0000","rspDesc":"成功"
+			}
 //			var obj = {rspCode:"0000",rspDesc:"成功",loginId:"13816000171",mobile:"13816000171",userName:"jane",ticket:"001"};
 //			var obj = {rspCode:"0000",rspDesc:"成功",loginId:"18817360039",mobile:"18817360039",userName:"jane",ticket:"001"};
 //			var obj = {rspCode:"0000",rspDesc:"成功",loginId:"18623784978",mobile:"18623784978",userName:"jane",ticket:"001"};
